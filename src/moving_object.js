@@ -1,14 +1,11 @@
 
 class MovingObject {
 
-    // MovingObject.DIRS = [
-    //     [ 0,  1], [ 1,  1], [ 1,  0],
-    //     [ 1, -1], [ 0, -1], [-1, -1],
-    //     [-1,  0], [-1,  1]
-    // ];
-
-    constructor() {
-
+    constructor(movement) {
+        this.pos = movement[pos];
+        this.vel = movement[vel];
+        this.radius = movement[radius];
+        this.color = movement[color];
     };
 
     move() {
@@ -24,3 +21,5 @@ class MovingObject {
     };
 
 };
+
+export default MovingObject;
