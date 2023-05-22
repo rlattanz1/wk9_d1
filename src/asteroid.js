@@ -6,3 +6,5 @@ class Asteroid extends MovingObject {
     };
 
 };
+
+
