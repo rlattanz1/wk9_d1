@@ -6,3 +6,5 @@ class Laser extends MovingObject {
     };
 
 };
+
+export default Laser;

@@ -1,4 +1,4 @@
-import 'moving_object.js';
+
 class Asteroid extends MovingObject {
 
     constructor() {
@@ -7,4 +7,4 @@ class Asteroid extends MovingObject {
 
 };
 
-
+export default Asteroid;

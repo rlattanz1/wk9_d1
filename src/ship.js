@@ -7,3 +7,5 @@ class Ship extends MovingObject {
 
 
 };
+
+export default Ship;
