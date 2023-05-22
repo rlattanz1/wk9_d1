@@ -9,4 +9,20 @@ class Game {
 
     };
 
+    step() {
+
+    };
+
+    move() {
+
+    };
+
+    checkCollisions() {
+
+    };
+
+    draw(ctx) {
+        
+    }
+
 };
