@@ -14,9 +14,10 @@ class MovingObject {
     };
 
     draw(ctx) {
+        console.log(this, "this")
         ctx.beginPath();
-        ctx.strokeStyle = "white";
-        ctx.arc(200,75,50,0, 2 * Math.PI, true);
+        ctx.strokeStyle = this.color;
+        ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI, true);
         ctx.stroke();
     };
 

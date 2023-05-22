@@ -1,6 +1,6 @@
 
-import MovingObject from "./moving_object"; 
-// import Asteroid from "./asteroid";
+import MovingObject from "./moving_object";
+import Asteroid from "./asteroid";
 // import Ship from "./ship";
 // import Laser from "./laser";
 
@@ -18,3 +18,12 @@ const canvasEl = document.getElementById("game-canvas");
         color: "white"
     });
     mo.draw(ctx);
+
+    const ast = new Asteroid({
+        pos: [50, 50],
+        vel: [20, 20],
+        radius: 20,
+        color: "yellow"
+    });
+    ast.draw(ctx);
+
