@@ -7,3 +7,7 @@ export function scale(vec,m){
     return [vec[0] * m, vec[1] * m];
 }
 
+export function getRandomInt(max){
+    return Math.floor(Math.random() * max)
+}
+

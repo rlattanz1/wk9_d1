@@ -2,10 +2,10 @@
 class MovingObject {
 
     constructor(movement) {
-        this.pos = Object.values(movement)[0];
-        this.vel = Object.values(movement)[1];
-        this.radius = Object.values(movement)[2];
-        this.color = Object.values(movement)[3];
+        this.pos = movement.pos;
+        this.vel = movement.vel;
+        this.radius = movement.radius;
+        this.color = movement.color;
     };
 
     move() {
@@ -14,11 +14,13 @@ class MovingObject {
     };
 
     draw(ctx) {
-        console.log(this, "this")
         ctx.beginPath();
         ctx.strokeStyle = this.color;
         ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI, true);
         ctx.stroke();
+        ctx.fill();
+        ctx.fillStyle = this.color;
+        // ctx.fillStyle()
     };
 
     collidedWith(Object) {
